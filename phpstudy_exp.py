@@ -15,7 +15,7 @@ def go(url):
 		send = requests.get(url=url,headers=headers,timeout=10)
 		if send.status_code == 200:
 			print('发送成功')
-			print(send.text.split('\r\n')[2])
+			print(send.text)
 		else:
 			print('执行失败，后门可能不存在')
 
